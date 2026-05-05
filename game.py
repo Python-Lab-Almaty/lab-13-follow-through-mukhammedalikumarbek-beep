@@ -8,7 +8,7 @@ import json
 # ----------------------------
 # 🟢 КОНСТАНТЫ
 # ----------------------------
-WIDTH, HEIGHT = 1200, 800
+WIDTH, HEIGHT = 1400, 900
 
 # 🟢 ИНИЦИАЛИЗАЦИЯ ЛОГА
 log = []
@@ -133,18 +133,18 @@ start, goal, impassable_obstacles = load_or_create_positions(student_name)
 screen = turtle.Screen()
 screen.setup(WIDTH, HEIGHT)
 screen.title(f"Red Riding Hood Mission - {student_name}")
-screen.bgcolor("white")
+screen.bgcolor("light blue")
 screen.tracer(0)
 
 # ----------------------------
 # 🟢 ГЕРОЙ
 # ----------------------------
 hero = turtle.Turtle()
-hero.shape("circle")
+hero.shape("square")
 hero.color("red")
 hero.penup()
 hero.goto(start)
-hero.shapesize(2, 2)
+hero.shapesize(3, 3)
 
 # ----------------------------
 # 🟢 ПРЕПЯТСТВИЯ
